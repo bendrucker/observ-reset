@@ -16,6 +16,8 @@ test(function (t) {
   t.end()
 
   function Constructor () {
-    return 'bar'
+    return function observable () {
+      return 'bar'
+    }
   }
 })
